@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-prettily",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Runs prettily as an eslint rule",
   "repository": "git+https://github.com/utily/eslint-plugin-prettily",
   "homepage": "https://github.com/utily/eslint-plugin-prettily#readme",
