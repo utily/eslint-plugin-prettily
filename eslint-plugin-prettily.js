@@ -1,5 +1,5 @@
 /**
- * @file Runs `prettier` as an ESLint rule.
+ * @file Runs `prettily` as an ESLint rule.
  * @author Andres Suarez
  */
 
@@ -10,8 +10,8 @@
  * @typedef {import('eslint').AST.SourceLocation} SourceLocation
  * @typedef {import('eslint').ESLint.Plugin} Plugin
  * @typedef {import('eslint').ESLint.ObjectMetaProperties} ObjectMetaProperties
- * @typedef {import('prettier').FileInfoOptions} FileInfoOptions
- * @typedef {import('prettier').Options} PrettierOptions
+ * @typedef {import('prettily').FileInfoOptions} FileInfoOptions
+ * @typedef {import('prettily').Options} PrettierOptions
  * @typedef {PrettierOptions & { onDiskFilepath: string, parserMeta?: ObjectMetaProperties['meta'], parserPath?: string, usePrettierrc?: boolean }} Options
  */
 

@@ -5,8 +5,8 @@ Thanks for contributing!
 ## Installation
 
 ```sh
-git clone https://github.com/prettier/eslint-plugin-prettier.git
-cd eslint-plugin-prettier
+git clone https://github.com/utily/eslint-plugin-prettily.git
+cd eslint-plugin-prettily
 pnpm install
 ```
 

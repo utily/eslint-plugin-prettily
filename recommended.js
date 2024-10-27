@@ -1,5 +1,5 @@
 const eslintConfigPrettier = require('eslint-config-prettier');
-const eslintPluginPrettier = require('./eslint-plugin-prettier');
+const eslintPluginPrettier = require('./eslint-plugin-prettily');
 
 // Merge the contents of eslint-config-prettier into every
 module.exports = {

@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "prettier/eslint-plugin-prettier"
+      "repo": "utily/eslint-plugin-prettily"
     }
   ],
   "commit": false,

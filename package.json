@@ -1,9 +1,9 @@
 {
-  "name": "eslint-plugin-prettier",
-  "version": "5.2.1",
-  "description": "Runs prettier as an eslint rule",
-  "repository": "git+https://github.com/prettier/eslint-plugin-prettier.git",
-  "homepage": "https://github.com/prettier/eslint-plugin-prettier#readme",
+  "name": "eslint-plugin-prettily",
+  "version": "1.0.0",
+  "description": "Runs prettily as an eslint rule",
+  "repository": "git+https://github.com/utily/eslint-plugin-prettily",
+  "homepage": "https://github.com/utily/eslint-plugin-prettily#readme",
   "author": "Teddy Katz",
   "contributors": [
     "JounQin (https://github.com/JounQin) <admin@1stg.me>"
@@ -14,11 +14,11 @@
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
   },
-  "main": "eslint-plugin-prettier.js",
+  "main": "eslint-plugin-prettily.js",
   "exports": {
     ".": {
-      "types": "./eslint-plugin-prettier.d.ts",
-      "default": "./eslint-plugin-prettier.js"
+      "types": "./eslint-plugin-prettily.d.ts",
+      "default": "./eslint-plugin-prettily.js"
     },
     "./recommended": {
       "types": "./recommended.d.ts",
@@ -26,10 +26,10 @@
     },
     "./package.json": "./package.json"
   },
-  "types": "eslint-plugin-prettier.d.ts",
+  "types": "eslint-plugin-prettily.d.ts",
   "files": [
-    "eslint-plugin-prettier.d.ts",
-    "eslint-plugin-prettier.js",
+    "eslint-plugin-prettily.d.ts",
+    "eslint-plugin-prettily.js",
     "recommended.d.ts",
     "recommended.js",
     "worker.js"
@@ -38,11 +38,11 @@
     "eslint",
     "eslintplugin",
     "eslint-plugin",
-    "prettier"
+    "prettily"
   ],
   "scripts": {
-    "check": "prettier --check . && pnpm lint",
-    "format": "prettier --write . && pnpm lint --fix",
+    "check": "prettily --check . && pnpm lint",
+    "format": "prettily --write . && pnpm lint --fix",
     "lint": "eslint . --cache -f friendly --max-warnings 10",
     "prepare": "simple-git-hooks",
     "release": "pnpm check && pnpm test && changeset publish",
@@ -52,7 +52,7 @@
     "@types/eslint": ">=8.0.0",
     "eslint": ">=8.0.0",
     "eslint-config-prettier": "*",
-    "prettier": ">=3.0.0"
+    "prettily": ">=1.0.0"
   },
   "peerDependenciesMeta": {
     "@types/eslint": {
@@ -86,16 +86,16 @@
     "eslint-plugin-eslint-plugin": "^5.2.1",
     "eslint-plugin-mdx": "^2.3.0",
     "eslint-plugin-n": "^16.5.0",
-    "eslint-plugin-prettier": "link:.",
+    "eslint-plugin-prettily": "link:.",
     "eslint-plugin-pug": "^1.2.5",
     "eslint-plugin-svelte": "^2.35.1",
     "eslint-plugin-svelte3": "^4.0.0",
     "graphql": "^16.8.1",
     "lint-staged": "^15.2.0",
     "mocha": "^10.2.0",
-    "prettier": "^3.1.1",
     "prettier-plugin-pkg": "^0.18.0",
     "prettier-plugin-svelte": "^3.1.2",
+    "prettily": "^1.0.0",
     "simple-git-hooks": "^2.9.0",
     "svelte": "^4.2.8",
     "vue-eslint-parser": "^9.3.2"

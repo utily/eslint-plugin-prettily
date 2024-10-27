@@ -18,9 +18,9 @@ const path = require('node:path');
 
 const { ESLint, RuleTester } = require('eslint');
 
-const eslintPluginPrettier = require('..');
+const eslintPluginPrettily = require('../eslint-plugin-prettily');
 
-const rule = eslintPluginPrettier.rules.prettier;
+const rule = eslintPluginPrettily.rules.prettier;
 
 // ------------------------------------------------------------------------------
 // Tests

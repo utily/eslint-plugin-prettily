@@ -1,17 +1,17 @@
 // @ts-check
 
 /**
- * @typedef {import('prettier').FileInfoOptions} FileInfoOptions
+ * @typedef {import('prettily').FileInfoOptions} FileInfoOptions
  * @typedef {import('eslint').ESLint.ObjectMetaProperties} ObjectMetaProperties
- * @typedef {import('prettier').Options & { onDiskFilepath: string, parserMeta?: ObjectMetaProperties['meta'], parserPath?: string, usePrettierrc?: boolean }} Options
+ * @typedef {import('prettily').Options & { onDiskFilepath: string, parserMeta?: ObjectMetaProperties['meta'], parserPath?: string, usePrettierrc?: boolean }} Options
  */
 
 const { runAsWorker } = require('synckit');
 
 /**
- * @type {typeof import('prettier')}
+ * @type {typeof import('prettily')}
  */
-let prettier;
+let prettily;
 
 runAsWorker(
   /**
@@ -32,17 +32,17 @@ runAsWorker(
     },
     eslintFileInfoOptions,
   ) => {
-    if (!prettier) {
-      prettier = await import('prettier');
+    if (!prettily) {
+      prettily = await import('prettily');
     }
 
     const prettierRcOptions = usePrettierrc
-      ? await prettier.resolveConfig(onDiskFilepath, {
+      ? await prettily.resolveConfig(onDiskFilepath, {
           editorconfig: true,
         })
       : null;
 
-    const { ignored, inferredParser } = await prettier.getFileInfo(
+    const { ignored, inferredParser } = await prettily.getFileInfo(
       onDiskFilepath,
       {
         resolveConfig: false,
@@ -177,7 +177,7 @@ runAsWorker(
     }
 
     /**
-     * @type {import('prettier').Options}
+     * @type {import('prettily').Options}
      */
     const prettierOptions = {
       ...initialOptions,
@@ -186,6 +186,6 @@ runAsWorker(
       filepath,
     };
 
-    return prettier.format(source, prettierOptions);
+    return prettily.format(source, prettierOptions);
   },
 );
